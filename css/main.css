@@ -1,0 +1,319 @@
+/* Importing fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+
+    /* variables for colors */
+
+    --clr-bg-light: #FAFBFD;
+    --clr-white-light: #FFFFFF;
+    --clr-purple-light: #853CE5;
+    --clr-unabled: #444148;
+    --clr-bg-dark: #29262B;
+    --clr-black-dark: #000000;
+    --clr-purple-dark: #AC5FDB;
+
+    /* variables for font family */
+
+    --ff-lato: 'Lato', sans-serif;
+    --ff-sans: 'Open Sans', sans-serif;
+
+    /* variables for font weight */
+
+    --weight-bold: 700;
+    --weight-medium: 500;
+}
+
+/* Declaring font size to use rem */
+
+html {
+    font-size: 62.5%;
+}
+
+/* body general styles */
+
+body {
+    font-size: 1.9rem;
+    background-color: var(--clr-bg-light);
+    font-family: var(--ff-sans);
+    font-weight: var(--weight-medium);
+    padding: 2.5rem 3.2rem;
+    color: var(--clr-purple-light);
+}
+
+/* styles for mobile nav bar */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.main-nav__open {
+    font-size: 2.5rem;
+}
+
+.nav-right {
+    display: none;
+}
+
+.nav-right.active {
+    display: block;
+    top: 25px;
+    width: 90%;
+    min-height: 28rem;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: rgba(41, 38, 43, .9);
+    box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 40;
+}
+
+.nav-right__item {
+    font-size: 2rem;
+    margin-top: 4rem;
+    color: var(--clr-purple-dark);
+}
+
+/* Styles for logo */
+
+.nav-left__link {
+    font-family: var(--ff-lato);
+    font-weight: var(--weight-bold);
+    font-size: 3rem;
+}
+
+/* Styles for the first part (about me) */
+
+.main-left__title {
+    font-size: 4.5rem;
+    font-family: var(--ff-lato);
+    font-weight: var(--weight-bold);
+    margin: 3rem 0;
+}
+
+.main-left__p {
+    font-size: 1.9rem;
+    margin-bottom: 2.5rem;
+}
+
+.main-left__btn {
+    all: unset;
+    color: var(--clr-white-light);
+    background-color: var(--clr-purple-light);
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    border-radius: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Styles for image section */
+
+/* Hide desktop div */
+
+.main-center__desktop {
+    display: none;
+}
+
+.main-center {
+    position: static;
+}
+
+.main-center__circle {
+    min-height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    background: var(--clr-purple-light);
+    position: absolute;
+    z-index: -10;
+}
+
+/* media queries to make the circle fit in different phones */
+
+@media (min-width: 320px) {
+    .main-center__circle {
+        width: 22rem;
+        min-height: 22rem;
+    }
+}
+
+@media (min-width: 425px) {
+    .main-center__circle {
+        width: 30rem;
+        min-height: 30rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .main-center__circle {
+        width: 47rem;
+        min-height: 47rem;
+    }
+}
+
+.main-center__img {
+    width: 100%;
+    z-index: 20;
+    position: relative;
+    top: 5rem;
+}
+
+/* Styles for the third part (making the internet a better place) */
+
+.main-right {
+    margin-top: 8rem;
+}
+
+.main-right__title {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+.main-right__p {
+    padding-right: 10rem;
+    margin-bottom: 3rem;
+}
+
+.main-right-icons__icon {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    margin-right: 2.5rem;
+}
+
+/* Styles for footer */
+
+.footer__p {
+    text-align: center;
+    font-weight: var(--weight-bold);
+}
+
+@media (min-width: 768px) {
+
+    body {
+        padding: 2.5rem 9.2rem;
+    }
+
+    /* Styles for the navbar in tablets */
+
+    .nav-right {
+        display: block;
+    }
+
+    .main-nav__open {
+        display: none;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .nav-right__list {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4rem;
+        width: 100%;
+        justify-content: left;
+    }
+
+    .nav-right__item {
+        margin-left: 4rem;
+        color: var(--clr-purple-light);
+        font-size: 2rem;
+        font-weight: var(--weight-bold);
+        padding-bottom: .5rem;
+    }
+
+    .nav-right .active {
+        border-bottom: .3rem solid var(--clr-purple-light);
+    }
+
+    /* Styles for the first part and image */
+
+    .main-wrapper {
+        display: flex;
+    }
+
+    .main-center__circle {
+        width: 21rem;
+        min-height: 21rem;
+    }
+
+    @media (min-width: 900px) {
+        .main-center__circle {
+            width: 25rem;
+            min-height: 25rem;
+        }
+    }
+
+    .main-left__btn {
+        margin: 0;
+    }
+
+    /* Styles for the second part */
+
+    .main-right {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-right__left {
+        width: 40%;
+    }
+
+    .main-right__title {
+        font-size: 3.5rem;
+    }
+
+    .main-right__p {
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    .main-right__right {
+        width: 40%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: .5rem 9.2rem;
+    }
+
+    .nav-right__item {
+        font-weight: var(--weight-medium);
+        font-size: 1.7rem;
+    }
+
+    .main-wrapper {
+        display: block;
+    }
+
+    .main-right {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .main-center {
+        display: none;
+    }
+
+    .main-center__desktop {
+        display: block;
+    }
+
+    .desktop-wrapper {
+        display: flex;
+    }
+
+    
+}

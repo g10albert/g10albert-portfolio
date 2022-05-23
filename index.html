@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to reset css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>g10albert</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <header>
+        <!-- nav left -->
+        <nav class="main-nav">
+            <div class="nav-left">
+                <ul class="nav-left__list">
+                    <li class="nav-left__item">
+                        <a href="" class="nav-left__link">g10a</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- nav left -->
+            <div class="nav-right" id="menu">
+                <ul class="nav-right__list">
+                    <li class="nav-right__item active">
+                        <i class="fa-solid fa-house nav-right__home"></i>
+                        <a href="./index.html" class="nav-right__link">Home</a>
+                    </li>
+                    <li class="nav-right__item">
+                        <i class="fa-solid fa-list-check nav-right__projects"></i>
+                        <a href="./projects.html" class="nav-right__link">Projects</a>
+                    </li>
+                    <li class="nav-right__item">
+                        <i class="fa-solid fa-user nav-right__contact"></i>
+                        <a href="./contact.html" class="nav-right__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-right__item close-btn" id="close-menu"><i class="fa-solid fa-x"></i></div>
+            </div>
+            <div class="main-nav__open" id="open-menu"><i class="fa-solid fa-bars open-menu"></i></div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+
+        <div class="desktop-wrapper">
+            <div class="main-wrapper">
+                <!-- left div -->
+                <div class="main-left">
+                    <h1 class="main-left__title">Hey there, I'm Albert</h1>
+                    <p class="main-left__p">Welcome to my portfolio!</p>
+                    <p class="main-left__p">I am a web developer from Dominican Republic.</p>
+                    <p class="main-left__p">I enjoy modeling and developing functional and responsive web applications.
+                    </p>
+                    <a href=""><button class="main-left__btn">SEE MY PROJECTS</button></a>
+                </div>
+                <!-- center div -->
+                <div class="main-center">
+                    <div class="main-center__circle"></div>
+                    <img class="main-center__img" src="./assets/images/me.png" alt="A picture of me">
+                </div>
+            </div>
+            <!-- center div for desktop design -->
+            <div class="main-center__desktop">
+                <div class="main-center__circle"></div>
+                <img class="main-center__img" src="./assets/images/me.png" alt="A picture of me">
+            </div>
+            <!-- right div -->
+            <div class="main-right">
+                <div class="main-right__left">
+                    <h2 class="main-right__title">Web Designer & Developer</h2>
+                    <p class="main-right__p">Making the internet a better place.</p>
+                </div>
+                <div class="main-right__right">
+                    <p class="main-right__p">Discover more about me on...</p>
+                    <i class="fa-solid fa-envelope main-right-icons__icon"></i>
+                    <i class="fa-brands fa-github main-right-icons__icon"></i>
+                    <i class="fa-brands fa-linkedin main-right-icons__icon"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <p class="footer__p">Made with <i class="fa-solid fa-heart"></i> by g10albert</p>
+    </footer>
+
+
+    <!-- Link to JavaScript file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
