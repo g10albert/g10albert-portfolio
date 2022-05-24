@@ -110,7 +110,7 @@ body {
     all: unset;
     color: var(--clr-white-light);
     background-color: var(--clr-purple-light);
-    padding: 1rem 3rem;
+    padding: 1.3rem 3rem;
     font-size: 1.6rem;
     border-radius: 5rem;
     margin-bottom: 5rem;
@@ -278,10 +278,6 @@ body {
         font-size: 2rem;
     }
 
-    .main-right__right {
-        width: 40%;
-    }
-
 }
 
 @media (min-width: 1024px) {
@@ -294,13 +290,55 @@ body {
         font-size: 1.7rem;
     }
 
+    /* Styles for desktop layout */
+
+    .desktop-wrapper {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: 2rem 0;
+    }
+
     .main-wrapper {
         display: block;
     }
 
+    .main-left__title {
+        font-size: 4.5rem;
+        font-family: var(--ff-lato);
+        font-weight: var(--weight-bold);
+        margin: 0 0 3rem 0;
+    }
+
+    .main-left__p {
+        font-size: 2.3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .main-center__img {
+        width: 90%;
+        top: 10rem;
+    }
+
     .main-right {
         display: block;
-        justify-content: space-between;
+        margin: 0;
+    }
+
+    .main-right__p {
+        padding: 0;
+        width: 100%;
+    }
+
+    .main-right__left {
+        width: 100%;
+    }
+
+    .main-right__right {
+        margin-top: 19rem;
+    }
+
+    .main-right__icons {
+        display: flex;
     }
 
     .main-center {
@@ -310,10 +348,5 @@ body {
     .main-center__desktop {
         display: block;
     }
-
-    .desktop-wrapper {
-        display: flex;
-    }
-
     
 }
