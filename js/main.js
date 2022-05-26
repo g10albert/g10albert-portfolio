@@ -22,8 +22,6 @@ const setTheme = (theme) => {
     body.setAttribute('data-theme', theme);
 }
 
-// const activeTheme = localStorage.getItem('theme');
-
 toggleTheme.addEventListener('click', () => {
 
     activeTheme = localStorage.getItem('theme');
