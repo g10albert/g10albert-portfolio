@@ -1,10 +1,11 @@
 <div align="center">
-<h2> Hi there! This is my place 😄. <img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" width="30px"></h2>
+<h2> Hi there, This is my place! <img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" width="30px"></h2>
 </div>
 
 <div align="center">
 
 Hello fellow developers, Welcome to my Github Profile! <br>
+<br>
 Please feel free to clone/fork projects. <br>
 
 <i>Happy Coding!</i> 😊
