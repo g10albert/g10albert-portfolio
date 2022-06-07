@@ -234,8 +234,13 @@ a:visited {
 
     /* Styles for the navbar in tablets */
 
+    .main-nav {
+        margin: 3rem 0;
+    }
+
     .nav-right {
         display: block;
+        transform: translateY(0);
     }
 
     .main-nav__open {
@@ -251,7 +256,7 @@ a:visited {
         flex-direction: row;
         margin-bottom: 4rem;
         max-width: 100%;
-        justify-content: left;
+        justify-content: right;
     }
 
     .nav-right__item {
@@ -312,7 +317,7 @@ a:visited {
 
 @media (min-width: 64em) {
     header, main, footer {
-        margin: .5rem 9.2rem;
+        margin: 5rem 9.2rem .5rem 9.2rem;
     }
 
     .nav-right__item {
@@ -572,5 +577,18 @@ a:visited {
     .main-contact__mail:hover {
         color: var(--clr-purple);
         
+    }
+}
+
+/* Styles for super big screens */
+
+@media (min-width: 1400px) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+    
+    footer {
+        margin: 10rem 7rem 10rem 0;
     }
 }
