@@ -20,6 +20,9 @@ Please feel free to clone/fork projects. <br>
 <i>Follow me around the web:</i><br>
 
 <a href="https://www.linkedin.com/in/g10albert" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+
+[Instagram](https://www.instagram.com/g10albert/ "Instagram"){:target="_blank"}
+
 <a href="https://www.instagram.com/g10albert" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
 
 </div>
