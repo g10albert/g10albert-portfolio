@@ -24,77 +24,76 @@
     <!-- nav -->
     <header>
         <!-- nav left -->
-        <nav class="main-nav">
-            <div class="nav-left">
-                <ul class="nav-left__list">
-                    <li class="nav-left__item">
-                        <a href="./index.html" class="nav-left__link">g10a</a>
+        <nav class="nav">
+            <div class="nav__left">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">g10a</a>
                     </li>
                 </ul>
             </div>
             <!-- nav left -->
-            <div class="nav-right" id="menu">
-                <ul class="nav-right__list">
-                    <li class="nav-right__item active">
-                        <i class="fa-solid fa-house nav-right__home"></i>
-                        <a href="./index.html" class="nav-right__link">Home</a>
+            <div class="nav__right" id="menu">
+                <ul class="nav__list--right">
+                    <li class="nav__item--right active">
+                        <i class="fa-solid fa-house nav__home"></i>
+                        <a href="./index.html" class="nav__link--right">Home</a>
                     </li>
-                    <li class="nav-right__item">
-                        <i class="fa-solid fa-list-check nav-right__projects"></i>
-                        <a href="./projects.html" class="nav-right__link">Projects</a>
+                    <li class="nav__item--right">
+                        <i class="fa-solid fa-list-check nav__projects"></i>
+                        <a href="./projects.html" class="nav__link--right">Projects</a>
                     </li>
-                    <li class="nav-right__item">
-                        <i class="fa-solid fa-user nav-right__contact"></i>
-                        <a href="./contact.html" class="nav-right__link">Contact</a>
+                    <li class="nav__item--right">
+                        <i class="fa-solid fa-user nav__contact"></i>
+                        <a href="./contact.html" class="nav__link--right">Contact</a>
                     </li>
-                    <li class="nav-right__item">
-                        <div class="nav-right__btn" id="toggle-theme">
+                    <li class="nav__item--right">
+                        <div class="nav__btn" id="toggle-theme">
                             
                         </div>
                     </li>
                 </ul>
-                <div class="nav-right__item close-btn" id="close-menu"><i class="fa-solid fa-x"></i></div>
+                <div class="nav__item--right nav__close" id="close-menu"><i class="fa-solid fa-x"></i></div>
             </div>
-            <div class="main-nav__open" id="open-menu"><i class="fa-solid fa-bars open-menu"></i></div>
+            <div class="nav__open" id="open-menu"><i class="fa-solid fa-bars"></i></div>
         </nav>
     </header>
     <!-- main -->
     <main>
-
-        <div class="desktop-wrapper">
-            <div class="main-wrapper">
+        <div class="desktop__wrapper">
+            <div class="main">
                 <!-- left div -->
-                <div class="main-left">
-                    <h1 class="main-left__title">Hey there, I'm Albert</h1>
-                    <p class="main-left__p">Welcome to my portfolio!</p>
-                    <p class="main-left__p">I am a web developer from Dominican Republic.</p>
-                    <p class="main-left__p">I enjoy modeling and developing functional and responsive web applications.
+                <div class="main__left">
+                    <h1 class="main__title">Hey there, I'm Albert</h1>
+                    <p class="main__p">Welcome to my portfolio!</p>
+                    <p class="main__p">I am a web developer from Dominican Republic.</p>
+                    <p class="main__p">I enjoy modeling and developing functional and responsive web applications.
                     </p>
-                    <a href="./projects.html"><button class="main-left__btn">SEE MY PROJECTS</button></a>
+                    <a href="./projects.html"><button class="main__btn">SEE MY PROJECTS</button></a>
                 </div>
                 <!-- center div -->
-                <div class="main-center">
-                    <div class="main-center__circle"></div>
-                    <img class="main-center__img" src="./assets/images/me.png" alt="A picture of me">
+                <div class="main__center">
+                    <div class="main__circle"></div>
+                    <img class="main__img" src="./assets/images/me.png" alt="A picture of me">
                 </div>
             </div>
-            <!-- center div for desktop design -->
-            <div class="main-center__desktop">
-                <div class="main-center__circle"></div>
-                <img class="main-center__img" src="./assets/images/me.png" alt="A picture of me">
+            <!-- center div for desktop design (the other one will hide on desktop for better layout) -->
+            <div class="main__desktop">
+                <div class="main__circle"></div>
+                <img class="main__img" src="./assets/images/me.png" alt="A picture of me">
             </div>
             <!-- right div -->
-            <div class="main-right">
+            <div class="main__right">
                 <div class="main-right__left">
-                    <h2 class="main-right__title">Web Designer & Developer</h2>
-                    <p class="main-right__p">Making the internet a better place.</p>
+                    <h2 class="main__right--title">Web Designer & Developer</h2>
+                    <p class="main__right--p">Making the internet a better place.</p>
                 </div>
-                <div class="main-right__right">
-                    <p class="main-right__p">Discover more about me on...</p>
-                    <div class="main-right__icons">
-                        <a href="mailto:albertmiguelg10@gmail.com"><i class="fa-solid fa-envelope main-right-icons__icon"></i></a>
-                        <a href="https://github.com/g10albert" target="_blank"><i class="fa-brands fa-github main-right-icons__icon"></i></a>
-                        <a href="https://www.linkedin.com/in/g10albert/" target="_blank"><i class="fa-brands fa-linkedin main-right-icons__icon"></i></a>
+                <div class="main__right--right">
+                    <p class="main__right--p">Discover more about me on...</p>
+                    <div class="main__right--icons">
+                        <a href="mailto:albertmiguelg10@gmail.com"><i class="fa-solid fa-envelope main__right--icon"></i></a>
+                        <a href="https://github.com/g10albert" target="_blank"><i class="fa-brands fa-github main__right--icon"></i></a>
+                        <a href="https://www.linkedin.com/in/g10albert/" target="_blank"><i class="fa-brands fa-linkedin main__right--icon"></i></a>
                     </div>
                 </div>
             </div>
@@ -104,7 +103,6 @@
     <footer class="footer">
         <p class="footer__p">Made with &#10084; by g10albert</p>
     </footer>
-
 
     <!-- Link to JavaScript file -->
     <script src="./js/main.js"></script>

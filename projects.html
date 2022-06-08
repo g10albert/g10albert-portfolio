@@ -21,83 +21,73 @@
     <!-- nav -->
     <header>
         <!-- nav left -->
-        <nav class="main-nav">
-            <div class="nav-left">
-                <ul class="nav-left__list">
-                    <li class="nav-left__item">
-                        <a href="./index.html" class="nav-left__link">g10a</a>
+        <nav class="nav">
+            <div class="nav__left">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">g10a</a>
                     </li>
                 </ul>
             </div>
             <!-- nav left -->
-            <div class="nav-right" id="menu">
-                <ul class="nav-right__list">
-                    <li class="nav-right__item">
-                        <i class="fa-solid fa-house nav-right__home"></i>
-                        <a href="./index.html" class="nav-right__link">Home</a>
+            <div class="nav__right" id="menu">
+                <ul class="nav__list--right">
+                    <li class="nav__item--right">
+                        <i class="fa-solid fa-house nav__home"></i>
+                        <a href="./index.html" class="nav__link--right">Home</a>
                     </li>
-                    <li class="nav-right__item active">
-                        <i class="fa-solid fa-list-check nav-right__projects"></i>
-                        <a href="./projects.html" class="nav-right__link">Projects</a>
+                    <li class="nav__item--right active">
+                        <i class="fa-solid fa-list-check nav__projects"></i>
+                        <a href="./projects.html" class="nav__link--right">Projects</a>
                     </li>
-                    <li class="nav-right__item">
-                        <i class="fa-solid fa-user nav-right__contact"></i>
-                        <a href="./contact.html" class="nav-right__link">Contact</a>
+                    <li class="nav__item--right">
+                        <i class="fa-solid fa-user nav__contact"></i>
+                        <a href="./contact.html" class="nav__link--right">Contact</a>
                     </li>
-                    <li class="nav-right__item">
-                        <div class="nav-right__btn" id="toggle-theme">
-
+                    <li class="nav__item--right">
+                        <div class="nav__btn" id="toggle-theme">
+                            
                         </div>
                     </li>
                 </ul>
-                <div class="nav-right__item close-btn" id="close-menu"><i class="fa-solid fa-x"></i></div>
+                <div class="nav__item--right nav__close" id="close-menu"><i class="fa-solid fa-x"></i></div>
             </div>
-            <div class="main-nav__open" id="open-menu"><i class="fa-solid fa-bars open-menu"></i></div>
+            <div class="nav__open" id="open-menu"><i class="fa-solid fa-bars"></i></div>
         </nav>
     </header>
     <!-- main -->
-
-    <main>
-        <h1 class="main-wrapper__title">Projects</h1>
-        <div class="main-wrapper__projects">
-
-
-            <div class="main-wrapper__card">
-                <img src="./assets/images/color_picker.png" alt="project 1" class="card-image__img">
-
-                <div class="card-info">
-                    <h2 class="card-title">Project 1</h2>
-                    <p class="card-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit libero
+    <main class="main__projects">
+        <h1 class="main__title">Projects</h1>
+        <div class="main__project">
+            <div class="main__card">
+                <img src="./assets/images/color_picker.png" alt="project 1" class="card__image">
+                <div class="card__info">
+                    <h2 class="card__title">Project 1</h2>
+                    <p class="card__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit libero
                         officiis quis adipisci perferendis magnam nemo ratione voluptatibus sunt labore!</p>
                 </div>
-
-                <div class="card-btns">
+                <div class="card__btns">
                     <a href="" target="_blank">
-                        <span class="card-btn">
-                            <i class="fa-solid fa-eye card-btn__icon"></i>
+                        <span class="card__btn">
+                            <i class="fa-solid fa-eye card__icon"></i>
                             <button>Project</button>
                         </span>
                     </a>
-                    <div class="card-btn__separator"></div>
+                    <div class="card__separator"></div>
                     <a href="" target="_blank">
-                        <span class="card-btn">
-                            <i class="fa-solid fa-code card-btn__icon"></i>
+                        <span class="card__btn">
+                            <i class="fa-solid fa-code card__icon"></i>
                             <button>Code</button>
                         </span>
                     </a>
                 </div>
             </div>
-
-
         </div>
-
     </main>
-
     <!-- footer -->
     <footer class="footer">
         <p class="footer__p">Made with &#10084; by g10albert</p>
     </footer>
-
 
     <!-- Link to JavaScript file -->
     <script src="./js/main.js"></script>

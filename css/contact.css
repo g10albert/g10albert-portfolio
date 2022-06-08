@@ -1,0 +1,43 @@
+/* Styles for contact page */
+
+.main-contact {
+    font-weight: var(--weight-bold);
+    height: 80vh;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.main__p {
+    margin-bottom: 1rem;
+}
+
+.main__mail {
+    color: var(--clr-unabled);
+    transition: color .2s ease;
+}
+
+.footer-contact {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for contact page in tablet */
+
+@media (min-width: 48rem) {
+    .main-contact {
+        font-size: 2.4rem;
+        height: 60vh;
+    }
+
+    .main__mail:hover {
+        color: var(--clr-purple);
+        
+    }
+}

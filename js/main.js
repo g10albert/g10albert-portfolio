@@ -15,7 +15,7 @@ closeMenu.addEventListener('click', () => {
     menu.classList.remove('active');
 })
 
-// Making the dark/light theme
+// Creating the dark/light theme
 
 const setTheme = (theme) => {
     localStorage.setItem('theme', theme);
