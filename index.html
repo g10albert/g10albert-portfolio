@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta property="og:title" content="I am a web developer from Dominican Republic. I enjoy modeling and developing functional and responsive web applications."/>
+    <meta property="og:title"
+        content="I am a web developer from Dominican Republic. I enjoy modeling and developing functional and responsive web applications." />
     <meta property="og:image" content="./assets/images/me.png">
-    <meta name="description" content="I am a web developer from Dominican Republic. I enjoy modeling and developing functional and responsive web applications.">
+    <meta name="description"
+        content="I am a web developer from Dominican Republic. I enjoy modeling and developing functional and responsive web applications.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/images/me.png">
@@ -17,6 +19,10 @@
     <link rel="stylesheet" href="./css/reset.css">
     <!-- Link to css file -->
     <link rel="stylesheet" href="./css/main.css">
+    <!-- Link to animate css -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <!-- Call the function to apply theme before the html content loads -->
+    <script>setThemeOnInit();</script>
     <title>g10albert</title>
 </head>
 
@@ -49,7 +55,6 @@
                     </li>
                     <li class="nav__item--right">
                         <div class="nav__btn" id="toggle-theme">
-                            
                         </div>
                     </li>
                 </ul>
@@ -64,26 +69,29 @@
             <div class="main">
                 <!-- left div -->
                 <div class="main__left">
-                    <h1 class="main__title">Hey there, I'm Albert</h1>
-                    <p class="main__p">Welcome to my portfolio!</p>
-                    <p class="main__p">I am a web developer from Dominican Republic.</p>
-                    <p class="main__p">I enjoy modeling and developing functional and responsive web applications.
+                    <h1 class="main__title animate__animated animate__backInLeft">Hey there, I'm Albert</h1>
+                    <p class="main__p animate__animated animate__backInLeft">Welcome to my portfolio!</p>
+                    <p class="main__p animate__animated animate__backInLeft">I am a web developer from Dominican
+                        Republic.</p>
+                    <p class="main__p animate__animated animate__backInLeft">I enjoy modeling and developing functional
+                        and responsive web applications.
                     </p>
-                    <a href="./projects.html"><button class="main__btn">SEE MY PROJECTS</button></a>
+                    <a href="./projects.html"><button class="main__btn animate__animated animate__backInLeft">SEE MY
+                            PROJECTS</button></a>
                 </div>
                 <!-- center div -->
-                <div class="main__center">
-                    <div class="main__circle"></div>
+                <div class="main__center  animate__animated animate__backInDown">
+                    <div class="main__circle animate__animated"></div>
                     <img class="main__img" src="./assets/images/me.png" alt="A picture of me">
                 </div>
             </div>
             <!-- center div for desktop design (the other one will hide on desktop for better layout) -->
-            <div class="main__desktop">
+            <div class="main__desktop animate__animated animate__backInDown">
                 <div class="main__circle"></div>
                 <img class="main__img" src="./assets/images/me.png" alt="A picture of me">
             </div>
             <!-- right div -->
-            <div class="main__right">
+            <div class="main__right animate__animated animate__backInRight">
                 <div class="main-right__left">
                     <h2 class="main__right--title">Web Designer & Developer</h2>
                     <p class="main__right--p">Making the internet a better place.</p>
@@ -91,16 +99,19 @@
                 <div class="main__right--right">
                     <p class="main__right--p">Discover more about me on...</p>
                     <div class="main__right--icons">
-                        <a href="mailto:albertmiguelg10@gmail.com"><i class="fa-solid fa-envelope main__right--icon"></i></a>
-                        <a href="https://github.com/g10albert" target="_blank"><i class="fa-brands fa-github main__right--icon"></i></a>
-                        <a href="https://www.linkedin.com/in/g10albert/" target="_blank"><i class="fa-brands fa-linkedin main__right--icon"></i></a>
+                        <a href="mailto:albertmiguelg10@gmail.com"><i
+                                class="fa-solid fa-envelope main__right--icon"></i></a>
+                        <a href="https://github.com/g10albert" target="_blank"><i
+                                class="fa-brands fa-github main__right--icon"></i></a>
+                        <a href="https://www.linkedin.com/in/g10albert/" target="_blank"><i
+                                class="fa-brands fa-linkedin main__right--icon"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer animate__animated animate__backInUp">
         <p class="footer__p">Made with &#10084; by g10albert</p>
     </footer>
 

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/g10albert/g10albert/issues"
   },
-  "homepage": "https://github.com/g10albert/g10albert#readme"
+  "homepage": "https://github.com/g10albert/g10albert#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

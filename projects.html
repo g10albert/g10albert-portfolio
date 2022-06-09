@@ -3,6 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta property="og:title"
+        content="I am a web developer from Dominican Republic. I enjoy modeling and developing functional and responsive web applications." />
+    <meta property="og:image" content="./assets/images/me.png">
+    <meta name="description"
+        content="I am a web developer from Dominican Republic. I enjoy modeling and developing functional and responsive web applications.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/images/me.png">
@@ -14,6 +19,10 @@
     <link rel="stylesheet" href="./css/reset.css">
     <!-- Link to css file -->
     <link rel="stylesheet" href="./css/main.css">
+    <!-- Link to animate css -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <!-- Call the function to apply theme before the html content loads -->
+    <script>setThemeOnInit();</script>
     <title>g10albert</title>
 </head>
 
@@ -46,7 +55,7 @@
                     </li>
                     <li class="nav__item--right">
                         <div class="nav__btn" id="toggle-theme">
-                            
+
                         </div>
                     </li>
                 </ul>
@@ -57,9 +66,9 @@
     </header>
     <!-- main -->
     <main class="main__projects">
-        <h1 class="main__title">Projects</h1>
+        <h1 class="main__title animate__animated animate__animated animate__backInLeft">Projects</h1>
         <div class="main__project">
-            <div class="main__card">
+            <div class="main__card animate__animated animate__backInLeft">
                 <img src="./assets/images/color_picker.png" alt="project 1" class="card__image">
                 <div class="card__info">
                     <h2 class="card__title">Project 1</h2>

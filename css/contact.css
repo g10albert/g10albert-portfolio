@@ -41,3 +41,21 @@
         
     }
 }
+
+/* Styles for contact page in desktop */
+
+@media (min-width: 1024px) {
+    .main-contact {
+        font-size: 2.4rem;
+        height: 60vh;
+    }
+
+    .main__mail {
+        padding-inline: 190px;
+    }
+
+    .main__mail:hover {
+        color: var(--clr-purple);
+        
+    }
+}

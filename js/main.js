@@ -46,9 +46,12 @@ const setThemeOnInit = () => {
         toggleTheme.innerHTML = `<i class="fa-solid fa-moon"></i>`
     }
 
-    savedTheme
-        ? body.setAttribute('data-theme', savedTheme)
-        : setTheme(initialTheme);
+    if (savedTheme) {
+        body.setAttribute('data-theme', savedTheme);
+
+    } else {
+        setTheme(initialTheme);
+    }
 }
 
 setThemeOnInit();
