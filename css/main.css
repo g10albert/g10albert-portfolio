@@ -55,6 +55,13 @@ body {
     font-family: var(--ff-sans);
     font-weight: var(--weight-medium);
     color: var(--clr-purple);
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 header, main, footer {
