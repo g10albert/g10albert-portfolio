@@ -262,13 +262,10 @@ a:visited {
 
     /* Styles for the navbar in tablets */
 
-    .nav {
-        margin: 3rem 0;
-    }
-
     .nav__right{
+        position: static;
         display: block;
-        transform: translateY(0);
+        transform: translate(0);
     }
 
     .nav__open {
@@ -302,6 +299,14 @@ a:visited {
 
     .main {
         display: flex;
+    }
+
+    .main__p {
+        line-height: 1.2;
+    }
+
+    .main__center {
+        margin-top: 3rem;
     }
 
     .main__circle {
@@ -349,14 +354,28 @@ a:visited {
         margin: 5rem 9.2rem .5rem 9.2rem;
     }
 
+    /* header {
+        margin-inline: 9.2rem
+    } */
+
+    .nav__list--right {
+        margin: 0;
+    }
+
     .nav__item--right {
         font-weight: var(--weight-medium);
         font-size: 1.7rem;
-        margin-left: 4rem;
         border-bottom: .3rem solid transparent;
+        margin: 0 0 0 4rem;
     }
 
-    .nav__item--right:not(:last-child):hover {
+    /* .nav__item--right {
+        font-size: 2rem;
+        margin-top: 4rem;
+        color: var(--clr-purple-dark);
+    } */
+
+    .nav__item--right:not(:nth-child(4)):hover {
         transition: all .2s ease-in-out;
         border-bottom: .3rem solid var(--clr-purple);
     }
