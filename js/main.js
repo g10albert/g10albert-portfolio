@@ -40,10 +40,10 @@ const setThemeOnInit = () => {
 
     activeTheme = localStorage.getItem('theme');
 
-    if (activeTheme === 'light') {
-        toggleTheme.innerHTML = `<i class="fa-solid fa-sun"></i>`
-    } else {
+    if (activeTheme === 'dark') {
         toggleTheme.innerHTML = `<i class="fa-solid fa-moon"></i>`
+    } else {
+        toggleTheme.innerHTML = `<i class="fa-solid fa-sun"></i>`
     }
 
     if (savedTheme) {
